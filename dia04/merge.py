@@ -25,3 +25,7 @@ df_transacoes.merge(df_user,
                     right_on="id"
                     )
 # %%
+df_user.merge(df_transacoes,
+              how='left',
+              left_on='id',
+              right_on='id_user')
